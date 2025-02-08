@@ -1,0 +1,9 @@
+.FooterBottom {
+  display: flex;
+  justify-content: space-between;
+	align-items: end;
+  &Copy {
+    font-weight: 400;
+    line-height: 19.52px;
+  }
+}

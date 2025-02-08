@@ -1,0 +1,15 @@
+.Header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  position: relative;
+  height: 2.625rem;
+  border-bottom: 1px solid #fff;
+  &LogoWrapper {
+    display: flex;
+    align-items: center;
+  }
+  &logoText {
+    font-weight: 500;
+  }
+}

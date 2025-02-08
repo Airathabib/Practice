@@ -1,0 +1,74 @@
+.Hero {
+  padding-top: 1rem;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  &Title {
+    text-align: center;
+    font-size: clamp(4rem, 2.044rem + 7.451vw, 8.75rem);
+    font-weight: 500;
+  }
+  &Ellipse1 {
+    position: absolute;
+    width: 171%;
+    height: 53%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &Ellipse2 {
+    position: absolute;
+    width: 140%;
+    height: 91%;
+    bottom: 170px;
+    right: 0;
+    z-index: -1;
+  }
+  &Ellipse3 {
+    position: absolute;
+    width: 20%;
+    height: 91%;
+    bottom: 200px;
+    right: 0;
+    z-index: -1;
+  }
+  &Ellipse4 {
+    position: absolute;
+    width: 68%;
+    height: 60%;
+    bottom: 21%;
+    right: 13%;
+    z-index: -1;
+  }
+  &Star1 {
+    position: absolute;
+    bottom: 201px;
+    left: 28%;
+    z-index: -1;
+  }
+  &Ellipse5 {
+    position: absolute;
+    width: 70%;
+    height: 55%;
+    bottom: 26%;
+    right: 12%;
+    z-index: -1;
+  }
+  &Star2 {
+    position: absolute;
+    top: 17%;
+    left: 73%;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Hero {
+    &Ellipse4,
+    &Ellipse5 {
+      display: none;
+    }
+  }
+}

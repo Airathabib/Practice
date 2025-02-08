@@ -1,0 +1,23 @@
+.PortfolioShowinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(18rem, 13.8676rem + 30.9804vw, 41.75rem);
+  height: clamp(18rem, 13.8676rem + 30.9804vw, 35rem);
+  box-shadow: inset -9 10 60 rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(24px);
+  position: relative;
+  &Text {
+    text-align: center;
+    width: 56%;
+    font-size: clamp(2rem, 1.3824rem + 2.3529vw, 3.5rem);
+    text-transform: uppercase;
+    rotate: -45deg;
+  }
+  &Image {
+    position: absolute;
+    left: -40px;
+    top: 36px;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,32 @@
+.MainContainer {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin-inline: auto;
+  padding-top: var(--main-padding);
+  padding-right: var(--main-padding);
+  padding-left: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+@media screen and (max-width: 992px) {
+  .MainContainer {
+    --main-padding: 20px;
+    padding-top: var(--main-padding);
+    padding-right: var(--main-padding);
+    padding-left: var(--main-padding);
+    padding-bottom: var(--main-padding);
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .MainContainer {
+    --main-padding: 10px;
+    padding-top: var(--main-padding);
+    padding-right: var(--main-padding);
+    padding-left: var(--main-padding);
+    padding-bottom: var(--main-padding);
+  }
+}

@@ -1,0 +1,12 @@
+.HeroTop {
+  display: flex;
+  justify-content: space-between;
+
+  &Info {
+    width: 15.625rem;
+    font-size: clamp(0.75rem, 0.647rem + 0.392vw, 1rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

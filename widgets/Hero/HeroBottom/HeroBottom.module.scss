@@ -1,0 +1,42 @@
+.HeroBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  &Line {
+    display: block;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: clamp(0rem, -115.154rem + 184.615vw, 51rem);
+      height: 1px;
+      background: #fff;
+    }
+  }
+  &Text {
+    font-size: clamp(0.75rem, 0.647rem + 0.392vw, 1rem);
+  }
+  &Btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: clamp(0.625rem, 0.419rem + 0.784vw, 1.125rem)
+      clamp(0.5rem, 0.088rem + 1.569vw, 1.5rem);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(0.75rem, 0.647rem + 0.392vw, 1rem);
+    color: var(--light-text);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

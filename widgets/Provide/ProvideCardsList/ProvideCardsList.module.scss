@@ -1,0 +1,115 @@
+.ProvideCardList {
+  position: relative;
+  &Wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 179px;
+
+    &Image {
+      position: absolute;
+      max-width: 1360px;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &Container {
+      position: relative;
+      width: 31.25rem;
+      height: 21.875rem;
+      padding: 51px 63px;
+      z-index: 5;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 0;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      &Info {
+        position: relative;
+        text-align: right;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 5;
+      }
+    }
+  }
+  &Title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  &Text {
+    font-weight: 500;
+    line-height: 22.4px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ProvideCardList {
+    &Wrapper {
+      padding: 50px 10px;
+
+      &Image {
+        width: 58.6875rem;
+      }
+      &Container {
+        width: 28.75rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ProvideCardList {
+    &Wrapper {
+      padding: 0;
+      padding-top: 50px;
+
+      &Image {
+        width: 720px;
+      }
+      &Container {
+        width: 360px;
+        padding: 30px 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  .ProvideCardList {
+    &Wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &Image {
+        display: none;
+      }
+      &Container {
+        width: 100%;
+        border: 2px solid var(--border);
+        border-radius: 0.7rem;
+        -webkit-border-radius: 0.7rem;
+        -moz-border-radius: 0.7rem;
+        -ms-border-radius: 0.7rem;
+        -o-border-radius: 0.7rem;
+        opacity: 1;
+        &:hover {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

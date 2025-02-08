@@ -1,0 +1,14 @@
+.Portfolio {
+  padding-top: var(--section-gap);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 998px) {
+  .Portfolio {
+    --section-gap: 5rem;
+    flex-direction: column;
+    padding-top: var(--section-gap);
+  }
+}

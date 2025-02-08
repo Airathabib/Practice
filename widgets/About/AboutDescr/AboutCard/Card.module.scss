@@ -1,0 +1,43 @@
+.Card {
+  width: 17rem;
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  background: url('../../../../public/card.png') no-repeat center center;
+  &Top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+    padding: 1rem;
+
+    &Info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    &Title {
+      font-size: 1.125rem;
+      font-family: 'satoshi';
+      text-transform: uppercase;
+    }
+    &Descr {
+      font-weight: 400;
+      text-align: left;
+      line-height: 22.4px;
+      letter-spacing: -1px;
+    }
+  }
+  &Bottom {
+    position: relative;
+    padding: 1rem;
+    &::before {
+      position: absolute;
+      content: url('../../../../public/card-line.png');
+      top: -16;
+      left: 16;
+    }
+  }
+}
+
+

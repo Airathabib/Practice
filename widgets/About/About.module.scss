@@ -1,0 +1,18 @@
+.About {
+  padding-top: var(--section-gap);
+  display: flex;
+  gap: var(--gap);
+}
+
+@media screen and (max-width: 1024px) {
+  .About {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .About {
+    --section-gap: 5rem;
+    padding-top: var(--section-gap);
+  }
+}

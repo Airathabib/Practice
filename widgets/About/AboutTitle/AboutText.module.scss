@@ -1,0 +1,23 @@
+.AboutText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &Title {
+    font-size: clamp(3rem, 2.176rem + 3.137vw, 5rem);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &Image {
+    padding-top: 110px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .AboutText {
+    &Image {
+      display: none;
+    }
+  }
+}

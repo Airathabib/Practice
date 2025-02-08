@@ -1,0 +1,25 @@
+.Socials {
+  &List {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(2rem, -0.7794rem + 10.5882vw, 8.75rem);
+    row-gap: 1.5rem;
+  }
+  &Link {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .Socials {
+    &List {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

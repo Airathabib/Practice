@@ -1,0 +1,39 @@
+.Cards {
+  width: 24.1875rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../../public//WhatTheCard.png');
+  &Top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 22px;
+    &Name {
+      display: block;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 19.52px;
+      letter-spacing: -1px;
+    }
+    &Proffession {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 17.08px;
+      font-style: italic;
+    }
+  }
+  &Info {
+    position: relative;
+    padding: 25px 22px;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 17.08px;
+    letter-spacing: normal;
+    &::before {
+      position: absolute;
+      content: url('../../../public/what_they_card_border.png');
+      top: -10;
+      left: 16;
+    }
+  }
+}

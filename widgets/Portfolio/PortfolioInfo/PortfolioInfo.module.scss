@@ -1,0 +1,12 @@
+.PortfolioInfo {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .PortfolioInfo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

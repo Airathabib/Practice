@@ -1,0 +1,24 @@
+<svg width="1360" height="800" viewBox="0 0 1360 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="680" cy="400" r="200" fill="url(#paint0_linear_8_367)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M660 400C672.712 400 680 392.712 680 380C680 392.712 687.288 400 700 400C687.288 400 680 407.288 680 420C680 407.288 672.712 400 660 400Z" fill="white"/>
+<path d="M680 750V50" stroke="url(#paint1_linear_8_367)" stroke-width="2"/>
+<path d="M1180 400L180 400" stroke="url(#paint2_linear_8_367)" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear_8_367" x1="680" y1="200" x2="680" y2="600" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2068CA"/>
+<stop offset="0.31" stop-color="#2774DD"/>
+<stop offset="0.745" stop-color="#04B7F1"/>
+<stop offset="1" stop-color="#38CCFC"/>
+</linearGradient>
+<linearGradient id="paint1_linear_8_367" x1="680.5" y1="50" x2="680.5" y2="750" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="0.5" stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.2"/>
+</linearGradient>
+<linearGradient id="paint2_linear_8_367" x1="180" y1="399.5" x2="1180" y2="399.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="0.5" stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.2"/>
+</linearGradient>
+</defs>
+</svg>

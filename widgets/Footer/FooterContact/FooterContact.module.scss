@@ -1,0 +1,109 @@
+.FooterContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  &Title {
+    width: 50%;
+    font-size: clamp(2.5rem, 1.6765rem + 3.1373vw, 4.5rem);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &Mail {
+    color: var(--light-text);
+    text-decoration: none;
+    line-height: 17.6px;
+    transition: opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -ms-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &Ellipse {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: -1;
+  }
+  &Ellipse1 {
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    z-index: -1;
+  }
+  &Ellipse2 {
+    position: absolute;
+    top: 13%;
+    left: 18%;
+    z-index: -1;
+  }
+  &Ellipse3 {
+    position: absolute;
+    bottom: 2%;
+    left: 12%;
+    z-index: 1;
+  }
+  &SmallStar1 {
+    position: absolute;
+    bottom: 10%;
+    left: 17%;
+    z-index: 1;
+  }
+  &SmallStar2 {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    z-index: -1;
+  }
+  &SmallStar3 {
+    position: absolute;
+    top: 36%;
+    right: 22%;
+    z-index: -1;
+  }
+  &BigStar1 {
+    position: absolute;
+    top: 12%;
+    right: 22%;
+    z-index: -1;
+  }
+  &BigStar2 {
+    position: absolute;
+    bottom: 14%;
+    right: 58%;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .FooterContact {
+    &Ellipse1,
+    &Ellipse2,
+    &Ellipse3 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .FooterContact {
+    &Ellipse {
+      left: 0;
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  .FooterContact {
+    &Ellipse {
+      display: none;
+    }
+  }
+}

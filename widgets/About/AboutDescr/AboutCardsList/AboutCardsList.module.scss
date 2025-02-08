@@ -1,0 +1,13 @@
+.AboutCardsList {
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .AboutCardsList {
+    justify-content: center;
+  }
+}
