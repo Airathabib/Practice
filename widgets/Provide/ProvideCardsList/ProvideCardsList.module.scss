@@ -10,8 +10,6 @@
       max-width: 1360px;
       top: 0;
       right: 0;
-      left: 0;
-      bottom: 0;
       z-index: -1;
     }
 
@@ -56,13 +54,34 @@
     line-height: 22.4px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
+  .ProvideCardList {
+    &Wrapper {
+      padding: 50px 57px;
+      &Image {
+        top: 0;
+        right: -122px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1110px) {
   .ProvideCardList {
     &Wrapper {
       padding: 50px 10px;
-
+      &Image {
+        top: 0;
+        right: -166px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ProvideCardList {
+    &Wrapper {
       &Image {
         width: 58.6875rem;
+        right: 0;
       }
       &Container {
         width: 28.75rem;
@@ -71,25 +90,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .ProvideCardList {
     &Wrapper {
       padding: 0;
       padding-top: 50px;
-
-      &Image {
-        width: 720px;
-      }
-      &Container {
-        width: 360px;
-        padding: 30px 40px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 610px) {
-  .ProvideCardList {
-    &Wrapper {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -110,6 +115,15 @@
           pointer-events: none;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  .ProvideCardList {
+    &Wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
   }
 }

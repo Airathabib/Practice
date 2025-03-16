@@ -40,3 +40,9 @@
     }
   }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .HeroBottomBtn:hover {
+    color: inherit;
+  }
+}

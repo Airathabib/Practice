@@ -6,7 +6,7 @@ import styles from './Portfolio.module.scss';
 
 const Portfolio = () => {
   return (
-    <section className={styles.Portfolio}>
+    <section className={styles.Portfolio} id='portfolio'>
       <PortfolioTop />
       <PortfolioInfo />
       <PortfolioBottom />

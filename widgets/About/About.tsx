@@ -5,7 +5,7 @@ import AboutDescr from './AboutDescr/AboutDescr';
 
 const About: React.FC = () => {
   return (
-    <section className={styles.About}>
+    <section className={styles.About} id='about'>
       <AboutText />
       <AboutDescr />
     </section>

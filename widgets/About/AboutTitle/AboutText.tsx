@@ -8,6 +8,7 @@ const AboutText: React.FC = () => {
       <h2 className={styles.AboutTextTitle}>about schrift</h2>
       <div className={styles.AboutTextImage}>
         <Image
+          className={styles.AboutImage}
           src={'@/../About Image.svg'}
           width={625}
           height={520}

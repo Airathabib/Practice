@@ -5,7 +5,7 @@ import CardList from './CardList/CardList';
 
 const WhatTheySay: React.FC = () => {
   return (
-    <section className={styles.WhatTheySay}>
+    <section className={styles.WhatTheySay} id='what'>
       <WhatTheySayTop />
       <CardList />
     </section>
