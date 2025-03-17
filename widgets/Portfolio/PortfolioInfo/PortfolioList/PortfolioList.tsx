@@ -13,6 +13,7 @@ const PortfolioList: React.FC<PortfolioListProps> = ({
   handleMouseEnter,
   handleMouseLeave,
 }) => {
+
   const portfolioData = data;
   return (
     <div className={styles.PortfolioList}>

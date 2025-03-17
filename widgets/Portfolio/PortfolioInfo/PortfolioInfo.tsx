@@ -10,6 +10,7 @@ const PortfolioInfo = () => {
 
   const handleMouseEnter = (id: string) => {
     setActiveCard(id);
+    console.log(id);
   };
   const handleMouseLeave = () => {
     setActiveCard(null);
