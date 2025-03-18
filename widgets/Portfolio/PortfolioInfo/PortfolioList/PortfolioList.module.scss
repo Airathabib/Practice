@@ -2,11 +2,13 @@
   &Wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   &Item {
     display: flex;
     padding: 52px 24px;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
     border-top: 1px solid rgba(241, 241, 241, 0.2);
     border-bottom: 1px solid rgba(241, 241, 241, 0.2);

@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 179px;
-
     &Image {
       position: absolute;
       max-width: 1360px;
@@ -57,11 +56,7 @@
 @media screen and (max-width: 1280px) {
   .ProvideCardList {
     &Wrapper {
-      padding: 50px 57px;
-      &Image {
-        top: 0;
-        right: -122px;
-      }
+      padding: 0px 57px;
     }
   }
 }
@@ -70,8 +65,7 @@
     &Wrapper {
       padding: 50px 10px;
       &Image {
-        top: 0;
-        right: -166px;
+        top: 100px;
       }
     }
   }
@@ -79,10 +73,6 @@
 @media screen and (max-width: 1024px) {
   .ProvideCardList {
     &Wrapper {
-      &Image {
-        width: 58.6875rem;
-        right: 0;
-      }
       &Container {
         width: 28.75rem;
       }

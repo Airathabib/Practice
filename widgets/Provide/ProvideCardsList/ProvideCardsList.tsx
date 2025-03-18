@@ -67,6 +67,7 @@ const ProvideCardsList = () => {
           alt='Image'
           width={1360}
           height={800}
+          layout='responsive'
         />
       </div>
     </div>

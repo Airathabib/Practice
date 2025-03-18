@@ -18,7 +18,7 @@ const PortfolioInfoBoard: React.FC<BoardHover> = ({ activeCard }) => {
         className={styles.PortfolioShowinfoImage}
         src={'@/../Portfolio_Ellipse.svg'}
         alt='Ellipse'
-        width={293}
+        width={292}
         height={300}
       />
     </div>
