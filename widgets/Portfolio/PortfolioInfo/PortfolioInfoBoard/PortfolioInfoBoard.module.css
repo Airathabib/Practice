@@ -1,0 +1,27 @@
+.PortfolioShowinfo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(18rem, 13.8676rem + 30.9804vw, 41.75rem);
+  height: clamp(18rem, 13.8676rem + 30.9804vw, 35rem);
+  box-shadow: inset -9 10 60 rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  position: relative;
+}
+.PortfolioShowinfoText {
+  position: absolute;
+  display: inline-block;
+  width: 56%;
+  top: 35%;
+  left: 25%;
+  font-size: clamp(2rem, 1.3824rem + 2.3529vw, 3.5rem);
+  text-transform: uppercase;
+  rotate: -45deg;
+}
+.PortfolioShowinfoImage {
+  position: absolute;
+  left: -40px;
+  top: 36px;
+  z-index: -1;
+}

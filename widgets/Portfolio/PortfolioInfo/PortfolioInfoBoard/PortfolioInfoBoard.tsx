@@ -7,17 +7,13 @@ interface BoardHover {
 }
 
 const PortfolioInfoBoard: React.FC<BoardHover> = ({ activeCard }) => {
-  const cardActiveBackGround = {
-    backgroundColor: activeCard ? 'rgba(255, 255, 255, 1)' : `transparent`,
-  };
+  const cardActiveHover = activeCard ? activeCard : `HOVER on the list`;
   return (
-    <div className={styles.PortfolioShowinfo} style={cardActiveBackGround}>
-      <div
-        className={styles.PortfolioShowinfoText}
-        style={{ opacity: activeCard ? 0 : 1 }}
-      >
-        HOVER on the list
+    <div className={styles.PortfolioShowinfo}>
+      <div className={styles.PortfolioShowinfoText}>
+        {JSON.stringify(cardActiveHover)}
       </div>
+
       <Image
         className={styles.PortfolioShowinfoImage}
         src={'@/../Portfolio_Ellipse.svg'}

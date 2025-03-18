@@ -5,7 +5,7 @@ import { data } from './data';
 import styles from './PortfolioList.module.scss';
 
 interface PortfolioListProps {
-  handleMouseEnter: (id: string) => void;
+  handleMouseEnter: (name: string) => void;
   handleMouseLeave: () => void;
 }
 
@@ -13,7 +13,6 @@ const PortfolioList: React.FC<PortfolioListProps> = ({
   handleMouseEnter,
   handleMouseLeave,
 }) => {
-
   const portfolioData = data;
   return (
     <div className={styles.PortfolioList}>
@@ -22,7 +21,7 @@ const PortfolioList: React.FC<PortfolioListProps> = ({
           <li
             className={styles.PortfolioListItem}
             key={item.id}
-            onMouseEnter={() => handleMouseEnter(item.id)}
+            onMouseEnter={() => handleMouseEnter(item.name)}
             onMouseLeave={handleMouseLeave}
           >
             <div className={styles.PortfolioListItemTitle}>

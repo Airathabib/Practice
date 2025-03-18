@@ -8,13 +8,18 @@ import styles from './PortfolioInfo.module.scss';
 const PortfolioInfo = () => {
   const [activeCard, setActiveCard] = useState<string | null>(null);
 
-  const handleMouseEnter = (id: string) => {
-    setActiveCard(id);
-    console.log(id);
+  const handleMouseEnter = (name: string) => {
+    setTimeout(() => {
+      setActiveCard(name);
+    }, 200);
   };
+
   const handleMouseLeave = () => {
-    setActiveCard(null);
+    setTimeout(() => {
+      setActiveCard(null);
+    }, 200);
   };
+
   return (
     <div className={styles.PortfolioInfo}>
       <PortfolioInfoBoard activeCard={activeCard} />
